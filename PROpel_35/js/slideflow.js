@@ -159,9 +159,8 @@
             nextslide = "";
             slideflow.forEach(element => checkifhigher(element, from));
             if (nextslide.length < 2) { nextslide = fallback };
-            if (parseInt(nextslide) < parseInt(from)) {
-                nextslide = fallback;sendglobalvalue("slideflowisactive", "false");}
-                veevaNavigateSceneWithID(nextslide);
+            if (parseInt(nextslide) < parseInt(from)) { nextslide = fallback;sendglobalvalue("slideflowisactive", "false");}
+            veevaNavigateSceneWithID(nextslide);
         }
         function checkifhigher(id, from) {
             if (id.length > 0 && nextslide.length < 1) {
