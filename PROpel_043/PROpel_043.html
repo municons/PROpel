@@ -4,31 +4,28 @@
     <!-- NORMAL SLIDE -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <script type="text/javascript" src="../PROpel_01/js/noBounce.js"></script>
-    <script type="text/javascript" src="../PROpel_01/js/veeva-library.js"></script>
-    <script type="text/javascript" src="../PROpel_01/js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="../PROpel_01/js/jquery.mobile-1.4.5.min.js"></script>
-    <!-- <script type="text/javascript" src="../PROpel_01/js/general.js"></script> -->
-    <script type="text/javascript" src="../PROpel_01/js/general_online.js"></script>
-    <script type="text/javascript" src="../PROpel_01/js/globals.js"></script>
-    <script type="text/javascript" src="../PROpel_01/js/slideflow.js"></script>
-    <script type="text/javascript" src="../PROpel_01/js/VAEwF.js"></script>
-    <link rel="stylesheet" type="text/css" href="../PROpel_01/css/style.css" />
+    <script type="text/javascript" src="../PROpel_001/js/noBounce.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/veeva-library.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/jquery.mobile-1.4.5.min.js"></script>
+    <!-- <script type="text/javascript" src="../PROpel_001/js/general.js"></script> -->
+    <script type="text/javascript" src="../PROpel_001/js/general_online.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/globals.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/slideflow.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/VAEwF.js"></script>
+    <link rel="stylesheet" type="text/css" href="../PROpel_001/css/style.css" />
     <script type="text/javascript">
         presentation = "PROpel";
-        previous_slide = "";
-        slide_id = "??";
-        next_slide = "";
+        previous_slide = "041";
+        slide_id = "043";
+        next_slide = "049";
         
         /*Get global values*/
         var globalvariables = storage.getAll();
         
-        /*Get Return-Path*/
-        returntoid = globalvariables["returntoid"];
-		function goback() {
-            veevaNavigateSceneWithID(returntoid);
-		}  
-        
+        /*Set Return-Value for PopUps*/
+        sendglobalvalue("returntoid", slide_id);
+   
         //Slideflow - Init - Start//
         slideflow = globalvariables["slideflow"];							//slideflow
         slideflowisactive = globalvariables["slideflowisactive"];			//slideflow
@@ -88,29 +85,27 @@
         
     </script>
     <style>
+        /*scrolling*/
+        /*
         #content {
             background-size: 100%;
             background-repeat: no-repeat;
             margin: 0;
             padding: 0;
             width: 1024px;
-            height: 835px;
+            height: 1795px;
             position: absolute;
             top: 0;
             left: 0;
             }
+        */
     </style>
 </head>
 
-
 <body>
-    <div id="main" presentation-id="PROpel" slide-id="??">
-        <div id="content" class="noImageCalc">
-            
-            <!--close-button-->
-            <div onclick="goback();" id="pageclosebtn"></div>
-            
-        </div>
+    <div id="main" presentation-id="PROpel" slide-id="043">
+        <div id="content" class="noImageCalc"></div>
+
     </div>
 
 </body>
