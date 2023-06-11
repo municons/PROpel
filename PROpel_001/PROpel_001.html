@@ -4,21 +4,22 @@
     <!-- NORMAL SLIDE -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <script type="text/javascript" src="js/noBounce.js"></script>
-    <script type="text/javascript" src="js/veeva-library.js"></script>
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-    <script type="text/javascript" src="js/general.js"></script> 
-    <script type="text/javascript" src="js/general_online.js"></script> 
-    <script type="text/javascript" src="js/globals.js"></script>
-    <script type="text/javascript" src="js/slideflow.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="../PROpel_001/js/noBounce.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/veeva-library.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/jquery.mobile-1.4.5.min.js"></script>
+    <!-- <script type="text/javascript" src="../PROpel_01/js/general.js"></script> -->
+    <script type="text/javascript" src="../PROpel_001/js/general_online.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/globals.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/slideflow.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/VAEwF.js"></script>
+    <link rel="stylesheet" type="text/css" href="../PROpel_001/css/style.css" />
     <script type="text/javascript">
         presentation = "PROpel";
         previous_slide = "";
         slide_id = "001";
         next_slide = "003";
-        sendglobalvalue("slideflowisactive", "false");
+        
         /*Get global values*/
         var globalvariables = storage.getAll();
         
@@ -66,7 +67,7 @@
             }
             $("#main").on("swiperight", swipeRightHandler);
             function swipeRightHandler(event) {
-                //veevaNavigateSceneWithID(previousslide);
+                veevaNavigateSceneWithID(previousslide);
             }
             
             //load background//
@@ -79,27 +80,52 @@
         function fadebodyin() {
             $("#main").delay(100).fadeIn(500);
         }
+        
+        //addfragment_fu(2);
+        
     </script>
     <style>
-       /* #content {
+        /*scrolling*/
+        /*
+        #content {
             background-size: 100%;
             background-repeat: no-repeat;
             margin: 0;
             padding: 0;
             width: 1024px;
-            height: 835px;
+            height: 1795px;
             position: absolute;
             top: 0;
             left: 0;
-            }*/
-       </style>
+            }
+        */
+        .link_placement {
+            position: absolute;
+            width: 105px;
+            height: 38px;
+            left: 915px;
+            /*border: 1px solid red;*/
+        }
+        #page002{
+            top: 638px;
+        }
+        #page105{
+            top: 677px;
+        }
+
+
+    </style>
 </head>
 
-
 <body>
-    <div id="main" presentation-id="PROpel" slide-id="01" class="link" data-page="02">
-        <div id="content" class="noImageCalc" ></div>
+    <div id="main" presentation-id="PROpel" slide-id="001">
+        <div id="content" class="noImageCalc">
+            <div class="link link_placement" id="page002" data-page="002"></div>
+            <div class="link link_placement" id="page105" data-page="105"></div>
+        </div>
+
     </div>
+
 </body>
 
 </html>
