@@ -4,16 +4,16 @@
     <!-- NORMAL SLIDE -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <script type="text/javascript" src="../PROpel_01/js/noBounce.js"></script>
-    <script type="text/javascript" src="../PROpel_01/js/veeva-library.js"></script>
-    <script type="text/javascript" src="../PROpel_01/js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="../PROpel_01/js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/noBounce.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/veeva-library.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/jquery.mobile-1.4.5.min.js"></script>
     <!-- <script type="text/javascript" src="../PROpel_01/js/general.js"></script> -->
-    <script type="text/javascript" src="../PROpel_01/js/general_online.js"></script>
-    <script type="text/javascript" src="../PROpel_01/js/globals.js"></script>
-    <script type="text/javascript" src="../PROpel_01/js/slideflow.js"></script>
-    <script type="text/javascript" src="../PROpel_01/js/VAEwF.js"></script>
-    <link rel="stylesheet" type="text/css" href="../PROpel_01/css/style.css" />
+    <script type="text/javascript" src="../PROpel_001/js/general_online.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/globals.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/slideflow.js"></script>
+    <script type="text/javascript" src="../PROpel_001/js/VAEwF.js"></script>
+    <link rel="stylesheet" type="text/css" href="../PROpel_001/css/style.css" />
     <script type="text/javascript">
         presentation = "PROpel";
         previous_slide = "";
@@ -99,6 +99,14 @@
             top: 0;
             left: 0;
             }*/
+        #pageclosebtn {
+            position: absolute;
+            height: 45px;
+            width: 45px;
+            top: 40px;
+            left: 948px;
+            /*border: 1px solid red;*/
+        }
     </style>
 </head>
 
@@ -108,7 +116,9 @@
         <div id="content" class="noImageCalc">
             
             <!--close-button-->
-            <div onclick="goback();" id="pageclosebtn"></div>
+            <!-- <div onclick="goback();" id="pageclosebtn"></div> -->
+
+            <div onclick="history.back();" id="pageclosebtn"></div>
             
         </div>
     </div>
