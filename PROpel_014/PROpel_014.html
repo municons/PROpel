@@ -17,7 +17,7 @@
     <script type="text/javascript">
         presentation = "PROpel";
         previous_slide = "";
-        slide_id = "14";
+        slide_id = "014";
         next_slide = "";
         
         /*Get global values*/
@@ -99,16 +99,26 @@
             top: 0;
             left: 0;
             }*/
+        #pageclosebtn {
+            position: absolute;
+            height: 45px;
+            width: 45px;
+            top: 40px;
+            left: 948px;
+            /*border: 1px solid red;*/
+        }
     </style>
 </head>
 
 
 <body>
-    <div id="main" presentation-id="PROpel" slide-id="14">
+    <div id="main" presentation-id="PROpel" slide-id="014">
         <div id="content" class="noImageCalc">
             
             <!--close-button-->
-            <div onclick="goback();" id="pageclosebtn"></div>
+            <!-- <div onclick="goback();" id="pageclosebtn"></div> -->
+
+            <div onclick="history.back();" id="pageclosebtn"></div>
             
         </div>
     </div>

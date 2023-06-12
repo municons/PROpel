@@ -99,6 +99,14 @@
             top: 0;
             left: 0;
             }*/
+        #pageclosebtn {
+            position: absolute;
+            height: 45px;
+            width: 45px;
+            top: 40px;
+            left: 948px;
+            /*border: 1px solid red;*/
+        }
     </style>
 </head>
 
@@ -108,7 +116,9 @@
         <div id="content" class="noImageCalc">
             
             <!--close-button-->
-            <div onclick="goback();" id="pageclosebtn"></div>
+            <!-- <div onclick="goback();" id="pageclosebtn"></div> -->
+
+            <div onclick="history.back();" id="pageclosebtn"></div>
             
         </div>
     </div>
