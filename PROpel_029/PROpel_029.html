@@ -99,6 +99,34 @@
             top: 0;
             left: 0;
             }*/
+        #pageclosebtn {
+            position: absolute;
+            height: 45px;
+            width: 45px;
+            top: 16px;
+            left: 957px;
+            /*border: 1px solid red;*/
+        }
+        .link_placement {
+            position: absolute;
+            width: 120px;
+            height: 40px;
+            left: 863px;
+            /*border: 1px solid red;*/
+        }
+        #page030{
+            top: 133px;
+        }
+        .secondary_link_placement{
+            position: absolute;
+            width: 170px;
+            height: 55px;
+            left: 780px;
+           /* border: 1px solid red;*/
+        }
+        #page031{
+            top:192px;
+        }
     </style>
 </head>
 
@@ -109,6 +137,12 @@
             
             <!--close-button-->
             <div onclick="goback();" id="pageclosebtn"></div>
+            
+            <!-- Referenzen -->
+            <div class="link link_placement" id="page030" data-page="030"></div>
+
+            <!-- Links -->
+            <div class="link secondary_link_placement" id="page031" data-page="031"></div>
             
         </div>
     </div>
