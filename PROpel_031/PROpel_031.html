@@ -16,9 +16,9 @@
     <link rel="stylesheet" type="text/css" href="../PROpel_001/css/style.css" />
     <script type="text/javascript">
         presentation = "PROpel";
-        previous_slide = "019";
+        previous_slide = "";
         slide_id = "031";
-        next_slide = "033";
+        next_slide = "";
         
         /*Get global values*/
         var globalvariables = storage.getAll();
@@ -99,6 +99,24 @@
             top: 0;
             left: 0;
             }*/
+        #pageclosebtn {
+            position: absolute;
+            height: 45px;
+            width: 45px;
+            top: 84px;
+            left: 959px;
+            /*border: 1px solid red;*/
+        }
+        .link_placement {
+            position: absolute;
+            width: 120px;
+            height: 40px;
+            left: 863px;
+           /* border: 1px solid red;*/
+        }
+        #page032{
+            top: 183px;
+        }
     </style>
 </head>
 
@@ -108,7 +126,12 @@
         <div id="content" class="noImageCalc">
             
             <!--close-button-->
-            <div onclick="goback();" id="pageclosebtn"></div>
+            <!-- <div onclick="goback();" id="pageclosebtn"></div> -->
+
+            <div onclick="history.back();" id="pageclosebtn"></div>
+
+            <!-- Referenzen -->
+            <div class="link link_placement" id="page032" data-page="032"></div>
             
         </div>
     </div>

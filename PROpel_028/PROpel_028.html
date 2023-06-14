@@ -8,24 +8,27 @@
     <script type="text/javascript" src="../PROpel_001/js/veeva-library.js"></script>
     <script type="text/javascript" src="../PROpel_001/js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="../PROpel_001/js/jquery.mobile-1.4.5.min.js"></script>
-    <!-- <script type="text/javascript" src="../PROpel_01/js/general.js"></script> -->
+    <!-- <script type="text/javascript" src="../PROpel_001/js/general.js"></script> -->
     <script type="text/javascript" src="../PROpel_001/js/general_online.js"></script>
     <script type="text/javascript" src="../PROpel_001/js/globals.js"></script>
     <script type="text/javascript" src="../PROpel_001/js/slideflow.js"></script>
-    <script type="text/javascript" src="../PROpel_001/js/VAEwF.js"></script>
+    <script type="text/javascript" src="../PROpel_01/js/VAEwF.js"></script>
     <link rel="stylesheet" type="text/css" href="../PROpel_001/css/style.css" />
     <script type="text/javascript">
         presentation = "PROpel";
         previous_slide = "";
-        slide_id = "001";
-        next_slide = "003";
+        slide_id = "028";
+        next_slide = "";
         
         /*Get global values*/
         var globalvariables = storage.getAll();
         
-        /*Set Return-Value for PopUps*/
-        sendglobalvalue("returntoid", slide_id);
-   
+        /*Get Return-Path*/
+        returntoid = globalvariables["returntoid"];
+		function goback() {
+            veevaNavigateSceneWithID(returntoid);
+		}  
+        
         //Slideflow - Init - Start//
         slideflow = globalvariables["slideflow"];							//slideflow
         slideflowisactive = globalvariables["slideflowisactive"];			//slideflow
@@ -85,46 +88,33 @@
         
     </script>
     <style>
-        /*scrolling*/
-        /*
-        #content {
+  /* #content {
             background-size: 100%;
             background-repeat: no-repeat;
             margin: 0;
             padding: 0;
             width: 1024px;
-            height: 1795px;
+            height: 835px;
             position: absolute;
             top: 0;
             left: 0;
-            }
-        */
-        .link_placement {
-            position: absolute;
-            width: 105px;
-            height: 38px;
-            left: 915px;
-            /*border: 1px solid red;*/
-        }
-        #page002{
-            top: 638px;
-        }
-        #page105{
-            top: 677px;
-        }
-
-
+            }*/
     </style>
 </head>
 
-<body>
-    <div id="main" presentation-id="PROpel" slide-id="001">
-        <div id="content" class="noImageCalc">
-            <div class="link link_placement" id="page002" data-page="002"></div>
-            <a href="pdf\FI-lynparza.pdf" class="link_placement" id="page105" target="_blank"></a>
-        </div>
 
+<body>
+    <div id="main" presentation-id="PROpel" slide-id="028">
+        <div id="content" class="noImageCalc">
+            
+            <!--close-button-->
+            <!-- <div onclick="goback();" id="pageclosebtn"></div> -->
+
+            <div onclick="history.back();" id="pageclosebtn"></div>
+            
+        </div>
     </div>
+
 </body>
 
 </html>
