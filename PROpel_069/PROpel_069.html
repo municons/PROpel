@@ -22,9 +22,14 @@
         
         /*Get global values*/
         var globalvariables = storage.getAll();
+
+        /*Get Return-Path*/
+        returntoid = globalvariables["returntoid"];
+		function goback() {
+            veevaNavigateSceneWithID(returntoid);
+		}  
         
-        /*Set Return-Value for PopUps*/
-        sendglobalvalue("returntoid", slide_id);
+        
    
         //Slideflow - Init - Start//
         slideflow = globalvariables["slideflow"];							//slideflow
@@ -99,12 +104,50 @@
             left: 0;
             }
         */
+        #pageclosebtn {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 12px;
+            left: 960px;
+            /*border: 1px solid red;*/
+        }
+        .link_placement {
+            position: absolute;
+            width: 118px;
+            height: 38px;
+            left: 867px;
+            /*border: 1px solid red;*/
+        }
+        /* Referenzen */
+        #page070{
+            top: 134px;
+        }
+        #page067{
+            top: 180px;
+        }
+        #page069{
+            top: 248px;
+        }
+        #page071{
+            top: 294px;
+        }
     </style>
 </head>
 
 <body>
     <div id="main" presentation-id="PROpel" slide-id="069">
-        <div id="content" class="noImageCalc"></div>
+        <div id="content" class="noImageCalc">
+            <!--close-button-->
+            <div onclick="goback();" id="pageclosebtn"></div>
+
+            <!-- Referenzen -->
+            <div class="link link_placement" id="page070" data-page="070"></div>
+
+            <div class="link link_placement" id="page067" data-page="067"></div>
+            <div class="link link_placement" id="page069" data-page="069"></div>
+            <div class="link link_placement" id="page071" data-page="071"></div>
+        </div>
 
     </div>
 

@@ -16,9 +16,9 @@
     <link rel="stylesheet" type="text/css" href="../PROpel_001/css/style.css" />
     <script type="text/javascript">
         presentation = "PROpel";
-        previous_slide = "";
-        slide_id = "68";
-        next_slide = "";
+        previous_slide = "??";
+        slide_id = "071";
+        next_slide = "??";
         
         /*Get global values*/
         var globalvariables = storage.getAll();
@@ -28,7 +28,7 @@
 		function goback() {
             veevaNavigateSceneWithID(returntoid);
 		}  
-        
+   
         //Slideflow - Init - Start//
         slideflow = globalvariables["slideflow"];							//slideflow
         slideflowisactive = globalvariables["slideflowisactive"];			//slideflow
@@ -88,28 +88,64 @@
         
     </script>
     <style>
-        /* #content {
+        /*scrolling*/
+        /*
+        #content {
             background-size: 100%;
             background-repeat: no-repeat;
             margin: 0;
             padding: 0;
             width: 1024px;
-            height: 835px;
+            height: 1795px;
             position: absolute;
             top: 0;
             left: 0;
-            }*/
+            }
+        */
+        #pageclosebtn {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 12px;
+            left: 960px;
+            /*border: 1px solid red;*/
+        }
+        .link_placement {
+            position: absolute;
+            width: 118px;
+            height: 38px;
+            left: 867px;
+            /*border: 1px solid red;*/
+        }
+        /* Referenzen */
+        #page072{
+            top: 134px;
+        }
+        #page067{
+            top: 180px;
+        }
+        #page069{
+            top: 248px;
+        }
+        #page071{
+            top: 294px;
+        }
+    
     </style>
 </head>
 
-
 <body>
-    <div id="main" presentation-id="PROpel" slide-id="068">
+    <div id="main" presentation-id="PROpel" slide-id="071">
         <div id="content" class="noImageCalc">
-            
             <!--close-button-->
             <div onclick="goback();" id="pageclosebtn"></div>
-            
+
+            <!-- Referenzen -->
+            <div class="link link_placement" id="page072" data-page="072"></div>
+
+            <div class="link link_placement" id="page067" data-page="067"></div>
+            <div class="link link_placement" id="page069" data-page="069"></div>
+            <div class="link link_placement" id="page071" data-page="071"></div>
         </div>
     </div>
 
