@@ -99,6 +99,24 @@
             top: 0;
             left: 0;
             }*/
+        #pageclosebtn {
+            position: absolute;
+            height: 45px;
+            width: 45px;
+            top: 85px;
+            left: 960px;
+            /*border: 1px solid red;*/
+        }
+        .link_placement {
+            position: absolute;
+            width: 120px;
+            height: 40px;
+            left: 862px;
+            /*border: 1px solid red;*/
+        }
+        #page092{
+            top: 136px;
+        }
     </style>
 </head>
 
@@ -107,10 +125,11 @@
     <div id="main" presentation-id="PROpel" slide-id="091">
         <div id="content" class="noImageCalc">
             
-                <!--close-button-->
-                <div onclick="goback();" id="pageclosebtn"></div>
-                <!--close-button-->
-                <div onclick="history.back();" id="pageclosebtn"></div>
+            <!--close-button-->
+            <div onclick="history.back();" id="pageclosebtn"></div>
+
+            <!-- Referenzen -->
+            <div class="link link_placement" id="page092" data-page="092"></div>
             
         </div>
     </div>

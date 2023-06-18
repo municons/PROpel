@@ -104,28 +104,28 @@
             width: 105px;
             height: 38px;
             left: 915px;
-            border: 1px solid red;
+           /* border: 1px solid red;*/
         }
         #page077{
             top: 365px;
         }
         #page081{
-            top: 403px;
+            top: 404px;
         }
         #page083{
-            top: 441px;
+            top: 443px;
         }
         #page093{
-            top: 479px;
+            top: 482px;
         }
         #page097{
-            top: 517px;
+            top: 521px;
         }
         #page003{
             top: 565px;
         }
         #page077_1{
-            top:593 px;
+            top:610px;
         }
        
         
@@ -141,36 +141,42 @@
         #page001{
             top: 726px;
         }
+
+        .secondary_link_placement {
+            position: absolute;
+            width: 190px;
+            height: 150px;
+            left: 670px;
+            /*border: 1px solid red;*/
+        }
+        #page079{
+            top: 220px;
+        }
     
     </style>
 </head>
 
 <body>
     <div id="main" presentation-id="PROpel" slide-id="077">
-        <div id="content" class="noImageCalc"></div>
-                <div class="link link_placement" id="page077" data-page="077"></div>
-                <div class="link link_placement" id="page081" data-page="081"></div>
-                <div class="link link_placement" id="page083" data-page="083"></div>
-                <div class="link link_placement" id="page093" data-page="093"></div>
-                <div class="link link_placement" id="page097" data-page="097"></div>
-                <div class="link link_placement" id="page003" data-page="003"></div>
-                <div class="link link_placement" id="page077_1" data-page="077"></div>
-             
+        <div id="content" class="noImageCalc">
+            <!-- <div class="link link_placement" id="page077" data-page="077"></div> -->
+            <div class="link link_placement" id="page081" data-page="081"></div>
+            <div class="link link_placement" id="page083" data-page="083"></div>
+            <div class="link link_placement" id="page093" data-page="093"></div>
+            <div class="link link_placement" id="page097" data-page="097"></div>
+            <div class="link link_placement" id="page003" data-page="003"></div>
+            <!-- <div class="link link_placement" id="page077_1" data-page="077"></div> -->
+            
+            <!-- Referenzen -->
+            <div class="link link_placement" id="page078" data-page="078"></div>
+            <!-- F1 -->
+            <a href="pdf\FI-lynparza.pdf" class="link_placement" id="page105" target="_blank"></a>
+            <!-- Home -->
+            <div class="link link_placement" id="page001" data-page="001"></div>
 
-
-                <!-- Referenzen -->
-                <div class="link link_placement" id="page078" data-page="078"></div>
-                <!-- F1 -->
-                <div class="link link_placement" id="page105" data-page="105"></div>
-                <!-- Home -->
-                <div class="link link_placement" id="page001" data-page="001"></div>
-              
-                <!--close-button-->
-                <div onclick="goback();" id="pageclosebtn"></div>
-                <!--close-button-->
-                <div onclick="history.back();" id="pageclosebtn"></div>
-
-               
+            <!-- Links -->
+            <div class="link secondary_link_placement" id="page079" data-page="079"></div>
+        </div>      
     </div>
 
 </body>
